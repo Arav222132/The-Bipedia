@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bipedia | Home</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Tahoma, sans-serif;
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 168px;
+        background-color: #f1f1f1c7;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #850909;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+
+      @media screen and (max-width: 1px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .sidebar a {
+          float: left;
+        }
+
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: left;
+        }
+      }
+
+      div#about {
+        text-align: center;
+        text-decoration: wavy;
+      }
+
+      a {
+        text-decoration: none;
+        color: #850909;
+      }
+
+      a:hover {
+        color: #3a0404;
+      }
+      input:hover {
+        color: #850909;
+        border-radius: 23px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a class="active" href="#index">Home</a>
+      <a
+        href="https://www.amazon.in/Coffee-50-Off-or-more/s?rh=n%3A4860057031%2Cp_n_pct-off-with-tax%3A2665401031"
+        >Buy Us Coffee</a
+      >
+      <a href="#contact" id="" onclick="b()">Random Page!</a>
+    </div>
+    <div id="about">
+      <h1>The Bipedia</h1>
+      <h3>Search about Anything</h3>
+      <input
+        id="searchbar"
+        onkeyup="search_animal()"
+        type="text"
+        name="search"
+        placeholder="Search People"
+      />
+
+      <ol id="list">
+        <b>
+          <p class="animals"><a href="wiki.html">Aditya</a></p>
+          <p class="animals"><a href="wikib.html">MrBeast</a></p>
+          <p class="animals"><a href="wiki_is.html">Sir Issac Newton</a></p>
+          <p class="animals"><a href="wiki_la.html">Aaradya</a></p>
+          <p class="animals"><a href="wiki_br.html">Brahmagupta</a></p>
+          <p class="animals"><a href="wiki_agb.html">Alexander Graham Bell</a></p>
+          <p class="animals"><a href="wiki_rb.html">Ruskin Bond</a>
+         <p class="animals"><a href="wiki_te.html">Thomas Alva Edison</a></p>
+          </p>
+        </b>
+      </ol>
+    </div>
+    <script>
+      function search_animal() {
+        let input = document.getElementById("searchbar").value;
+        input = input.toLowerCase();
+        let x = document.getElementsByClassName("animals");
+
+        for (hi = 0; hi < x.length; hi++) {
+          if (!x[hi].innerHTML.toLowerCase().includes(input)) {
+            x[hi].style.display = "none";
+          } else {
+            x[hi].style.display = "list-item";
+          }
+        }
+      }
+      function b() {
+        let x = Math.floor(Math.random() * 9 + 1);
+        if (x == 2) {
+          window.open("wiki_br.html");
+        }
+        if (x == 3) {
+          window.open("wiki_la.html");
+        }
+        if (x == 4) {
+          window.open("wiki_agb.html");
+        }
+        if (x == 5) {
+          window.open("wiki_is.html");
+        }
+        if (x == 6) {
+          window.open("wiki_rb.html");
+        }
+        if (x == 7) {
+          window.open("wikib.html");
+        }
+        if (x == 8) {
+          window.open("wiki_te.html");
+        }      
+      }
+    </script>
+  </body>
+</html>

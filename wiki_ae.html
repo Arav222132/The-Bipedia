@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="All_style.css">
+    <title>The Wiki | Albert Einstein</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Tahoma, sans-serif;
+      }
+
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 168px;
+        background-color: #f1f1f1c7;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      .sidebar a.active {
+        background-color: #850909;
+        color: white;
+      }
+
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+
+      @media screen and (max-width: 1px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+
+        .sidebar a {
+          float: left;
+        }
+
+        div.content {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: left;
+        }
+      }
+
+      div#about {
+        margin-left: 180px;
+      }
+
+      .abou {
+        margin-left: 180px;
+      }
+
+      a#secret {
+        color: rebeccapurple;
+      }
+
+      a#secret a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+
+      .img {
+        padding: 19px;
+        width: 140px;
+        background-color: #f1f1f1c7;
+        position: fixed;
+        height: 319px;
+        overflow: auto;
+        margin-left: 186px;
+        margin-top: -15px;
+        position: relative;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #312f2f;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #f7c9c9;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgb(161, 120, 120);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <a class="active" href="index.html">Home</a>
+      <a
+        href="https://www.amazon.in/Coffee-50-Off-or-more/s?rh=n%3A4860057031%2Cp_n_pct-off-with-tax%3A2665401031"
+        >Buy Us Coffee</a
+      >
+      <a onclick="b()" id="secret">Random Page!</a>
+    </div>
+    <center>
+      <h1>The Wiki</h1>
+    </center>
+    <div id="about">
+      <h3>Albert Einstein</h3>
+      <p>
+        Albert Einstein was a German-born theoretical physicist who is widely
+        held to be one of the greatest and most influential scientists of all
+        time. Best known for developing the theory of relativity, Einstein also
+        made important contributions to quantum mechanics.
+      </p>
+      </div>
+      <div class="img">
+        <img src="Einstein.jpg" alt />
+        <p>Nationality:German</p>
+        <p>Birth:1879</p>
+        <p>Death:1955</p>
+      </div>
+    <div class="abou">
+      <h3>Childhood</h3>
+      <p>
+        Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the
+        German Empire, on 14 March 1879. His parents, secular Ashkenazi Jews,
+        were Hermann Einstein, a salesman and engineer, and Pauline Koch. In
+        1880, the family moved to Munich's borough of
+        Ludwigsvorstadt-Isarvorstadt, where Einstein's father and his uncle
+        Jakob founded Elektrotechnische Fabrik J. Einstein & Cie, a company that
+        manufactured electrical equipment based on direct current. Albert
+        attended a Catholic elementary school in Munich from the age of five.
+        When he was eight, he was transferred to the Luitpold Gymnasium, where
+        he received advanced primary and then secondary school education. In
+        1894, Hermann and Jakob's company tendered for a contract to install
+        electric lighting in Munich, but without success—they lacked the capital
+        that would have been required to update their technology from direct
+        current to the more efficient, alternating current alternative. The
+        failure of their bid forced them to sell their Munich factory and search
+        for new opportunities elsewhere. The Einstein family moved to Italy,
+        first to Milan and a few months later to Pavia, where they settled in
+        Palazzo Cornazzani. Einstein, then fifteen, stayed behind in Munich in
+        order to finish his schooling. His father wanted him to study electrical
+        engineering, but he was a fractious pupil who found the Gymnasium's
+        regimen and teaching methods far from congenial. He later wrote that the
+        school's policy of strict rote learning was harmful to creativity. At
+        the end of December 1894, a letter from a doctor persuaded the
+        Luitpold's authorities to release him from its care, and he joined his
+        family in Pavia. While in Italy as a teenager, he wrote an essay
+        entitled "On the Investigation of the State of the Ether in a Magnetic
+        Field".
+      </p>
+      <h3>Children and Maragies</h3>
+      <p>
+        Einstein included just one woman, a twenty year old Serbian, Mileva
+        Marić. Over the next few years, the pair spent many hours discussing
+        their shared interests and learning about topics in physics that the
+        polytechnic school's lectures did not cover. In his letters to Marić,
+        Einstein confessed that exploring science with her by his side was much
+        more enjoyable than reading a textbook in solitude. Eventually the two
+        students became not only friends but also lovers. Historians of physics
+        are divided on the question of the extent to which Marić contributed to
+        the insights of Einstein's annus mirabilis publications. There is at
+        least some evidence that he was influenced by her scientific ideas, but
+        there are scholars who doubt whether her impact on his thought was of
+        any great significance at all. Correspondence between Einstein and
+        Marić, discovered and published in 1987, revealed that in early 1902,
+        while Marić was visiting her parents in Novi Sad, she gave birth to a
+        daughter, Lieserl. When Marić returned to Switzerland it was without the
+        child, whose fate is uncertain. A letter of Einstein's that he wrote in
+        September 1903 suggests that the girl was either given up for adoption
+        or died of scarlet fever in infancy. Einstein and Marić married in
+        January 1903. In May 1904, their son Hans Albert was born in Bern,
+        Switzerland. Their son Eduard was born in Zürich in July 1910. In
+        letters that Einstein wrote to Marie Winteler in the months before
+        Eduard's arrival, he described his love for his wife as "misguided" and
+        mourned the "missed life" that he imagined he would have enjoyed if he
+        had married Winteler instead: "I think of you in heartfelt love every
+        spare minute and am so unhappy as only a man can be." In 1912, Einstein
+        entered into a relationship with Elsa Löwenthal, who was both his first
+        cousin on his mother's side and his second cousin on his father's. When
+        Marić learned of his infidelity soon after moving to Berlin with him in
+        April 1914, she returned to Zürich, taking Hans Albert and Eduard with
+        her. Einstein and Marić were granted a divorce on 14 February 1919 on
+        the grounds of having lived apart for five years. As part of the divorce
+        settlement, Einstein agreed that if he were to win a Nobel Prize, he
+        would give the money that he received to Marić; he won the prize two
+        years later. Einstein married Löwenthal in 1919. In 1923, he began a
+        relationship with a secretary named Betty Neumann, the niece of his
+        close friend Hans Mühsam. Löwenthal nevertheless remained loyal to him,
+        accompanying him when he emigrated to the United States in 1933. In
+        1935, she was diagnosed with heart and kidney problems. She died in
+        December 1936.
+      </p>
+    </div>
+  </body>
+</html>
